@@ -1,0 +1,1053 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 40px;
+}
+
+
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    margin-top: 20px;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: fit-content;
+    margin-top: -50px;
+}
+
+header a {
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+    padding: 30px 20px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+header ul {
+
+    flex-direction: row;
+    display: flex;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a:hover {
+    border-top-color: #0065FC;
+    color: #0065FC;
+}
+
+
+/* Page Principal */
+/* Phrases d'Accroche */
+.accroche {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.accroche h1 {
+    margin-bottom: 0px;
+}
+
+.Description {
+    margin-top: 10px;
+}
+
+
+/* Recherche */
+.Recherche {
+    display: flex;
+    align-items: center;
+}
+
+.Localisation {
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Recherche i {
+    padding: 5px 10px;
+}
+
+.Recherche input {
+    flex-basis: 230px;
+    height: 46px;
+    border: 1px solid #F2F2F2;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    height: 46px;
+    border-radius: 0 15px 15px 0;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass {
+    display: none;
+}
+
+
+
+/* Filtres */
+.Filtres {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.Icon span {
+    font-weight: bold;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Icon .fa-solid {
+    color: blue;
+    background-color: #DEEBFF;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: -5px;
+}
+
+.Icon {
+    display: flex;
+    align-items: center;
+    border: 2px solid lightgrey;
+    padding: 2px 20px 2px 0;
+    border-radius: 50px;
+}
+
+/* Hover filtres */
+.Icon:hover {
+    background-color: rgba(211, 211, 211, 0.5);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.Icon:hover i {
+    background-color: #9cbcec;
+}
+
+
+
+
+/* Infos */
+.Info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.Info .fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    height: 25px;
+    width: 25px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+
+
+/* Hébergements */
+.hébergements {
+    display: flex;
+    gap: 4%;
+}
+
+.Dormir {
+    border-radius: 20px;
+    width: 70%;
+    background-color: #F2F2F2;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Dormir .column {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 3%;
+    height: auto;
+}
+
+.hébergements h2 {
+    padding: 50px 0 30px 2%;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0px;
+}
+
+.Appart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.Appart .Carte {
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(145, 145, 145, 0.4);
+    border-radius: 20px;
+    margin: 0 5px;
+    width: 30%;
+}
+
+.Appart a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    margin: 0 40px 40px 40px;
+}
+
+.Appart .More {
+    display: flex;
+    flex-basis: 100%;
+    font-weight: bolder;
+    margin-left: 1%;
+}
+
+.More a {
+    margin: 0px;
+    padding-bottom: 40px;
+}
+
+.Appart figure {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 5px;
+}
+
+.Appart figcaption {
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 0 0 40px 40px;
+}
+
+.Appart h3 {
+    font-weight: bold;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.Appart p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.Appart img {
+    width: auto;
+    height: 160px;
+    margin: 1px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.Carte a {
+    margin: 0px;
+}
+
+/* Etoiles */
+.bleu {
+    color: #0065FC;
+}
+
+.gris {
+    color: lightgrey;
+}
+
+
+/* Populaire */
+.Populaire {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding-bottom: 20px;
+    width: 30%;
+}
+
+.Panneaux {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 20px;
+}
+
+.Popular_Appart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Panneaux img {
+    width: 40%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.Panneaux figure {
+    display: flex;
+    margin: 4px;
+    height: 140px;
+}
+
+.Panneaux h3 {
+    margin: 0px;
+}
+
+.Panneaux .Etoiles {
+    margin: 0px;
+}
+
+.Panneaux p {
+    margin-top: 3%;
+    margin-bottom: auto;
+}
+
+.Populaire h3 {
+    font-size: 18px;
+}
+
+.Panneaux .Carte {
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(145, 145, 145, 0.4);
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+}
+
+.Populaire figcaption {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 2%;
+}
+
+.Populaire .Titre {
+    display: flex;
+    flex-basis: 100%;
+    height: min-content;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 0 0 20px;
+}
+
+.Titre i {
+    display: flex;
+    padding-right: 50px;
+}
+
+.Populaire a {
+    margin: 0px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+/* Hover des cartes */
+.Carte:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/* Activités */
+
+.Activités .Lieux {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    height: 600px;
+}
+
+.Lieux a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0px;
+}
+
+.Lieux h3 {
+    margin: -5px 0;
+    background-color: white;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 0 0 20px 20px;
+}
+
+
+.Lieux img {
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.Activités {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+}
+
+.Activités .carte {
+    width: 24%;
+}
+
+.test {
+    box-shadow: 5px 5px 5px rgb(145, 145, 145, 0.4);
+    border-radius: 20px;
+}
+
+.seul {
+    height: 100%;
+    padding-bottom: 70px;
+}
+
+.seul img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.Lieux .colonne {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5%;
+}
+
+.colonne img {
+    width: 100%;
+}
+
+.Activités .Fort {
+    height: 60%;
+    padding-bottom: 70px;
+}
+
+.Fort img {
+    height: 100%;
+}
+
+.Activités .Frioul {
+    height: 35%;
+    padding-bottom: 70px;
+}
+
+.Frioul img {
+    height: 100%;
+}
+
+.Activités .garde {
+    height: 48%;
+    padding-bottom: 60px;
+}
+
+.garde img {
+    height: 93%;
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    margin: 50px -40px -40px -40px;
+    background-color: #F2F2F2;
+    display: flex;
+    gap: 20%;
+}
+
+footer .propos {
+    margin-left: 40px;
+}
+
+footer a {
+    font-size: 22px;
+    color: inherit;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer h4 {
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+footer .liens {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+/* footer hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* MediaQueries Tablette */
+@media (min-width:768px) and (max-width: 992px) {
+
+    /* recherche */
+
+    .Recherche {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        gap: 50px;
+    }
+
+    .menu li {
+        flex-basis: 100%;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 15px;
+    }
+
+    .menu a:hover {
+        border-top-color: transparent;
+    }
+
+    .menu li:hover {
+        border-bottom-color: #0065FC;
+    }
+
+
+
+    .Dormir {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .Dormir h2 {
+        padding: 40px 40px;
+    }
+
+    .hébergements {
+        flex-direction: column;
+    }
+
+    .Appart img {
+        width: auto;
+        height: 100px;
+    }
+
+    .Populaire {
+        order: -99;
+        padding-bottom: 40px;
+        width: 100%;
+
+    }
+
+    .Popular_Appart {
+
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .Panneaux {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .Panneaux .Carte {
+        margin: 0px;
+        width: auto;
+    }
+
+    .Panneaux img {
+        width: 20%;
+        /* height: 170px; */
+    }
+
+    /* Activités */
+
+    .Activités {
+        background-color: #F2F2F2;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .Activités h2 {
+        margin-left: 20px;
+    }
+
+    .Activités .Lieux {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        align-items: center;
+        height: fit-content;
+        gap: 40px;
+    }
+
+    .Activités .test {
+        width: 100%;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .Activités .carte {
+        width: 100%;
+    }
+
+    .Activités .colonne {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .Activités img {
+        height: 250px;
+    }
+
+    .Activités .Frioul {
+        padding-bottom: 0px;
+    }
+
+    .Activités .garde {
+        padding-bottom: 0px;
+    }
+
+    .Activités .Fort {
+        padding-bottom: 0px;
+    }
+
+    .seul {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+
+    /* Pied de page */
+    footer {
+        gap: 10%;
+        justify-content: center;
+        padding: 0 80px;
+    }
+
+    footer .propos {
+        margin: 0px;
+
+    }
+
+    footer .hebergement {
+        flex-basis: 33%;
+        text-align: center;
+    }
+
+    footer .propos {
+        flex-basis: 33%;
+    }
+
+    footer .assistance {
+        flex-direction: column;
+        flex-basis: 33%;
+        text-align: end;
+    }
+}
+
+
+/* MediaQueries téléphone*/
+@media (max-width: 768px) {
+    body {
+        margin: 0px;
+    }
+
+
+    /* Entête */
+    .haut_page .logo {
+        height: auto;
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .haut_page nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        display: flex;
+
+    }
+
+    .menu li {
+        flex-basis: 100%;
+        border-bottom: 3px solid lightgrey;
+        padding-bottom: 15px;
+    }
+
+    .haut_page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .menu a:hover {
+        border-top-color: transparent;
+    }
+
+    .menu li:hover {
+        border-bottom-color: #0065FC;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Recherche */
+    .Recherche {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        display: inline;
+    }
+
+    .Recherche input {
+        flex-basis: 100%;
+    }
+
+    button {
+        border-radius: 15px;
+        padding: 15px 10px;
+        margin-left: -35px;
+    }
+
+
+    /* Filtres */
+
+    .Filtres h2 {
+        flex-basis: 100%;
+        margin-bottom: 0px;
+    }
+
+    .Filtres {
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    /* Info */
+
+    .Info {
+
+        align-items: flex-start;
+    }
+
+    .Info p {
+        margin: 0px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .Info .fa-solid {
+        border: none;
+    }
+
+    .cercle {
+        display: flex;
+        height: 27px;
+        width: 27px;
+        border: 1px solid lightgrey;
+        border-radius: 50%;
+    }
+
+    /* Populaire */
+
+    .hébergements {
+        flex-direction: column;
+    }
+
+    .Populaire {
+        order: -99;
+        background-color: #F2F2F2;
+        margin: 0 20px;
+        border-radius: 0px;
+        padding: 20px 0;
+        /* margin-bottom: -40px; */
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .Popular_Appart {
+        margin: 20px;
+    }
+
+    .Populaire .Titre {
+        margin-top: 0px;
+    }
+
+    .Panneaux .Carte {
+        width: 100%;
+    }
+
+    .Panneaux figure {
+        height: 150px;
+    }
+
+    .Panneaux figcaption {
+        height: 85%;
+    }
+
+    .Panneaux img {
+        height: 100%;
+        min-height: 130px;
+        min-width: 150px;
+    }
+
+    .Panneaux {
+        gap: 20px;
+        margin: 0px;
+    }
+
+
+    /* .Panneaux .Etoiles {
+        margin-top: 20px;
+    } */
+
+
+
+
+    /*hébergement */
+
+    .hébergements h2 {
+        width: fit-content;
+        margin: 0 20px;
+        padding: 0px;
+    }
+
+    .Dormir {
+        background-color: white;
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 50px;
+    }
+
+    .Dormir h2 {
+        margin-bottom: 10px;
+    }
+
+    .Dormir .column {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .Appart {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .Appart figure {
+        margin: 0px;
+    }
+
+    .Appart figcaption {
+        width: 90%;
+        height: auto;
+        margin-top: 0px;
+        margin-left: 20px;
+
+    }
+
+    .Appart img {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .Appart .Carte {
+        width: 90%;
+        margin: 0px;
+        margin-left: 20px;
+    }
+
+    .Appart .More {
+        width: fit-content;
+        margin-left: 22px;
+    }
+
+
+
+
+    /* Activités */
+
+    .Activités {
+        background-color: white;
+        padding-bottom: 20px;
+    }
+
+    .Activités .Lieux {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        align-items: center;
+        height: fit-content;
+        gap: 20px;
+    }
+
+
+    .Activités .test {
+        padding-bottom: 10px;
+    }
+
+    .Activités .carte {
+        width: 100%;
+    }
+
+    .Activités h2 {
+        margin-left: 20px;
+    }
+
+    .Activités .colonne {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .Activités img {
+        height: 150px;
+    }
+
+    .Activités .garde {
+        width: 100%;
+        /* padding-bottom: 0px; */
+    }
+
+    .Activités .Frioul {
+        width: 100%;
+        /* padding-bottom: 0px; */
+    }
+
+    .Activités .Fort {
+        height: fit-content;
+        /* padding-bottom: 0px; */
+    }
+
+    .seul {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        gap: 40px;
+        margin: 0px;
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+
+    footer .propos {
+        margin-top: 10px;
+        margin-left: 40px;
+        text-align: start;
+    }
+
+    footer .hebergement {
+        margin-top: 10px;
+        margin-left: 40px;
+        text-align: start;
+    }
+
+    footer .assistance {
+        margin-top: 10px;
+        margin-left: 40px;
+        text-align: start;
+    }
+
+    footer .liens {
+        margin-bottom: 15px;
+    }
+
+    footer h4 {
+        margin: 0px;
+    }
+
+
+
+}
